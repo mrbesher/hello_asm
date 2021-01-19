@@ -32,7 +32,7 @@ cont:		ADD esi, 8
 		POP ecx
 		LOOP outlo
 		
-		; The array is sorted now. Dtermine if the student satisfies the conditions
+		; The array is sorted now. Determine if the student satisfies the conditions
 		MOV esi, [ebp+8] ;get the address of notlar
 		MOV ecx, [ebp+12] ;get n
 		MOV eax, [ebp+16] ;get stdno

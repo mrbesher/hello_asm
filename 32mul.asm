@@ -12,7 +12,7 @@ MAIN    PROC FAR
         XOR AX, AX
         PUSH AX
         MOV AX, datasg
-        MOV DS, AX ;default end
+        MOV DS, AX
         ;DDxDD = A:BxC:D = E:F:G:H
         ;order in memory arr -> 0B:2A:4D:6C | result -> 0H:2G:4F:6E
         ;multiply the least significant parts BxD (stored in reverse order)
@@ -50,7 +50,7 @@ MAIN    PROC FAR
         XOR AX, AX
         ADC AX, WORD PTR result[SI+6] ; CF + AX + E -> AX
         MOV WORD PTR result[SI+6], AX ; AX -> E
-son:    RETF
+        RETF
         MAIN ENDP
         codesg ENDS
         END MAIN
