@@ -1,4 +1,4 @@
-# new_asm
+# Hello Assembly
 A collection of programs written in x86 assembly for Intel 8086. Tested in [DOSBOX](https://www.dosbox.com/).
 
 ## 4exams.asm
